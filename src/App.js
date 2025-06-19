@@ -20,7 +20,7 @@ function App() {
 
     const forecastRes = await fetch(forecastUrl);
     const forecastData = await forecastRes.json();
-    setForecast(forecastData.list.filter((_, idx) => idx % 8 === 0)); // 5-day
+    setForecast(forecastData.list.filter((_, idx) => idx % 8 === 0)); 
   };
 
   return (
@@ -40,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
